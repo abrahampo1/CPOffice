@@ -25,6 +25,9 @@ $provincia = $row["PROVINCIA"];
 include_once("../getdate.php");
 $ano = $ahora["year"];
 $mes = $bMeses[$ahora["mon"]];
+if($hectareas == 0){
+	$hectareas = 1;
+}
 $rendimiento = round($kg_entregados / $hectareas, 2);
 $row += [
 	'rendimiento_total' => "$rendimiento",

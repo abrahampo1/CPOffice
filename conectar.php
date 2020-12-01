@@ -1,7 +1,7 @@
 <?php
 
 $servername = "localhost";
-$database = "cplogistic";
+$database = "cpoffice";
 $username = "root";
 $password = "";
 // Create connection

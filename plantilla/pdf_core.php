@@ -43,6 +43,7 @@ $row += [
 	'ano' => "$ano",
 	'mes' => "$mes",
 	'dia' => "$dia",
+	'direccion' => "$direccion",
 	'rendimiento' => "$rendimiento"
 ];
 $fields = $row;

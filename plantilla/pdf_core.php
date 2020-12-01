@@ -5,7 +5,7 @@
 ****************************/
 
 require('fpdm.php');
-include("../../conectar.php");
+include("../conectar.php");
 
 $viticultor = $_GET["v"];
 $consulta = "SELECT * FROM personas WHERE vit =".$viticultor;

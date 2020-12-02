@@ -13,9 +13,11 @@ $resultado = mysqli_query($link, $consulta);
 $row = mysqli_fetch_assoc($resultado);
 
 $nombre_completo = $row["1APELLIDO"]." ".$row["2APELLIDO"].", ".$row["NOMBRE"];
-$direccion = $row["MUNICIPIO"]." ".$row["CODPOST"];
+$localidad = $row["MUNICIPIO"];
+$codpost = $row["CODPOST"];
 $dni = $row["DNI"];
 $dir = $row["DIRECCION"];
+$telefono = $row["TFNO"];
 $variedad = "insertar variedad";
 $kg_entregados = $row["KG_ENTREGADOS"]/100;
 $hectareas = $row["SUPERFICIE"] /1000;
@@ -44,6 +46,13 @@ $row += [
 	'mes' => "$mes",
 	'dia' => "$dia",
 	'direccion' => "$direccion",
+	'localidad' => "$localidad",
+	'dni' => "$dni",
+	'provincia' => "$provincia",
+	'localidad' => "$localidad",
+	'cod_post' => "$codpost",
+	'telefono' => "$telefono",
+	'localidad' => "$localidad",
 	'rendimiento' => "$rendimiento"
 ];
 $fields = $row;

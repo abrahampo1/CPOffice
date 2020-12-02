@@ -16,7 +16,7 @@
 <?php
 $vit = $_POST["viticultor"];
 echo '
-<embed src="./pdf_core.php?v='.$vit.'" width="100%" height="90%" alt="pdf" pluginspage="http://www.adobe.com/products/acrobat/readstep2.html">';
+<embed src="./pdf_core.php?v='.$vit.'&b='.$_POST["b"].'" width="100%" height="90%" alt="pdf" pluginspage="http://www.adobe.com/products/acrobat/readstep2.html">';
 ?>
 <script src="../../assets/js/jquery.min.js"></script>
 <script src="../../assets/bootstrap/js/bootstrap.min.js"></script>
